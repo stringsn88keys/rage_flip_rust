@@ -1,0 +1,10 @@
+[package]
+name = "rage_flip_rust"
+version = "2.3.0"
+edition = "2021"
+description = "A Rust port of the rage_flip Ruby gem for text transformations"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+rand = "0.8"
+dirs = "5"
