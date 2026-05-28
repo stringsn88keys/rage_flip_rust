@@ -49,7 +49,8 @@ If no `text` argument is provided, the command reads from standard input.
 | `double-underline` | Apply double underline formatting             |
 | `chaos`          | Insert random characters for chaos effect        |
 | `frustrated`     | Uppercase with period separators                 |
-| `substitute`     | Replace words with kaomoji/emoji equivalents     |
+| `emote`          | Output kaomoji/emoji by name                     |
+| `disapproval`    | Shorthand for the disapproval emote              |
 
 ### Examples
 
@@ -71,6 +72,36 @@ rage_flip strikethrough "This text is crossed out"
 
 # Frustrated mode
 rage_flip frustrated "This is so annoying"
+
+# Output an emote by name
+rage_flip emote shrug
+
+# Output multiple emotes
+rage_flip emote heart
+rage_flip emote fire
+
+# Disapproval shorthand
+rage_flip disapproval
+```
+
+### Available Emotes
+
+The `emote` command supports 260+ emojis and ASCII art emotes organized by category:
+
+- **Custom** - ASCII art emotes like `flip`, `rage`, `shrug`, `tableflip`, etc.
+- **Keyboard** - Keyboard shortcuts like `cmd`, `shift`, `option`, etc.
+- **Smileys** - Face emojis like `smile`, `laugh`, `cry`, `heart`, etc.
+- **Combined** - Multi-emoji combinations like `catshit`, `bullshit`, etc.
+
+Examples:
+```bash
+rage_flip emote flip        # (╯°□°)╯︵ ┻━┻
+rage_flip emote shrug       # ¯\_(ツ)_/¯
+rage_flip emote yuno        # ლ(ಠ益ಠლ)
+rage_flip emote smile       # 😄
+rage_flip emote heart       # ❤️
+rage_flip emote fire        # 🔥
+rage_flip emote cmd         # ⌘
 ```
 
 ### Chaos Level Configuration
